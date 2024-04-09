@@ -5,6 +5,13 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import { getCategory } from './apis/testApi'
+import { da } from 'element-plus/es/locales.mjs'
+//测试接口函数
+getCategory().then(data=>{
+    console.log(data);
+    
+})
 
 const app = createApp(App)
 
