@@ -6,7 +6,9 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import { getCategory } from './apis/testApi'
-import { da } from 'element-plus/es/locales.mjs'
+// import '@/styles/common.scss'
+
+
 //测试接口函数
 getCategory().then(data=>{
     console.log(data);
